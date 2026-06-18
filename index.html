@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANZZ STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0b0f;
+color:#fff;
+padding-bottom:90px;
+}
+
+.topbar{
+background:linear-gradient(90deg,#00bfff,#7a00ff);
+padding:10px;
+overflow:hidden;
+white-space:nowrap;
+font-weight:600;
+}
+
+.topbar marquee{
+font-size:14px;
+}
+
+.hero{
+margin:15px;
+background:linear-gradient(145deg,#17171f,#231827);
+border:1px solid rgba(255,255,255,.08);
+border-radius:30px;
+padding:20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+}
+
+.hero-text{
+width:55%;
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+border-radius:50px;
+background:rgba(255,105,180,.15);
+border:1px solid rgba(255,105,180,.3);
+color:#ff79c6;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.hero h1{
+font-size:32px;
+line-height:1.1;
+}
+
+.hero h1 span{
+color:#ff69b4;
+}
+
+.hero p{
+margin-top:10px;
+color:#aaa;
+}
+
+.hero img{
+width:40%;
+border-radius:20px;
+}
+
+.search{
+padding:0 15px;
+}
+
+.search input{
+width:100%;
+padding:18px;
+background:#1a1a22;
+border:1px solid #303040;
+border-radius:20px;
+color:white;
+font-size:15px;
+outline:none;
+}
+
+.category{
+display:flex;
+gap:10px;
+overflow:auto;
+padding:15px;
+}
+
+.category button{
+background:#17171f;
+border:1px solid #2d2d3a;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+}
+
+.section{
+margin:15px;
+background:#17171f;
+border-radius:25px;
+padding:20px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin:15px;
+}
+
+.menu{
+background:#17171f;
+padding:25px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+.products{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+padding:15px;
+}
+
+.card{
+background:#17171f;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #2f2f3f;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.price{
+font-size:28px;
+font-weight:700;
+color:#ff69b4;
+}
+
+.old{
+text-decoration:line-through;
+color:#888;
+}
+
+.buy{
+width:100%;
+margin-top:12px;
+padding:12px;
+border:none;
+border-radius:12px;
+background:#ff4fa0;
+color:white;
+font-weight:700;
+}
+
+.fab{
+position:fixed;
+right:20px;
+bottom:90px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#ff4fa0;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+}
+
+.bottom{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:#121218;
+display:flex;
+justify-content:space-around;
+padding:15px;
+border-top:1px solid #2f2f3f;
+}
+
+.bottom a{
+color:white;
+text-decoration:none;
+font-size:13px;
+}
+
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:9999;
+}
+
+.modal-content{
+background:#17171f;
+padding:20px;
+border-radius:20px;
+max-width:450px;
+width:100%;
+text-align:center;
+}
+
+.modal img{
+width:100%;
+border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<marquee>
+🔥 DANZZ STORE • JUAL BELI AKUN GAME • TRUSTED • QRIS ALL PAYMENT • FREE FIRE • MLBB
+</marquee>
+</div>
+
+<div class="hero">
+<div class="hero-text">
+<div class="badge">⚡ DANZZ STORE OFFICIAL</div>
+<h1>Jual, Beli & Rental <span>Akun Game Premium</span></h1>
+<p>Pusat akun gaming terpercaya Indonesia.</p>
+</div>
+
+<img src="banner-danzz.png">
+</div>
+
+<div class="search">
+<input type="text" placeholder="Cari akun impianmu...">
+</div>
+
+<div class="category">
+<button>🔥 Free Fire</button>
+<button>⚽ eFootball</button>
+<button>⚡ MLBB</button>
+<button>🎮 Rental</button>
+</div>
+
+<div class="section">
+<h2>🔥 Top Up All Game</h2>
+</div>
+
+<div class="menu-grid">
+
+<a class="menu" href="https://whatsapp.com/channel/0029Vb7jRon4SpkB1NsoCZ39">
+📢 Saluran WA
+</a>
+
+<a class="menu" href="https://wa.me/6285707277941">
+📱 Nomor Resmi
+</a>
+
+<a class="menu" href="https://chat.whatsapp.com/LRNUWx6rdPA9jn0LDtgB6b">
+📦 Stok Akun
+</a>
+
+<a class="menu" href="#" onclick="showQR()">
+💳 QRIS
+</a>
+
+<a class="menu" href="https://www.tiktok.com/@danzzcengtur">
+🎵 TikTok
+</a>
+
+<a class="menu" href="https://www.youtube.com/@danzzsture">
+▶ YouTube
+</a>
+
+</div>
+
+<div class="section">
+<h2>🔥 Flash Sale</h2>
+</div>
+
+<div class="products">
+
+<div class="card">
+<img src="https://picsum.photos/600/600?1">
+<div class="card-body">
+<h3>STOK FREE FIRE </h3>
+<div class="old">Rp 250.000</div>
+<div class="price">Rp 250.000</div>
+<button class="buy" onclick="showQR()">BELI SEKARANG</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/600/600?2">
+<div class="card-body">
+<h3>EFOOTBALL EPIC</h3>
+<div class="old">Rp 850.000</div>
+<div class="price">Rp 800.000</div>
+<button class="buy" onclick="showQR()">BELI SEKARANG</button>
+</div>
+</div>
+
+</div>
+
+<a class="fab" href="https://wa.me/6285707277941">💬</a>
+
+<div class="bottom">
+<a href="#">🏠 Beranda</a>
+<a href="#produk">📦 Produk</a>
+<a href="#">🎮 Rental</a>
+<a href="#" onclick="showQR()">💳 Bayar</a>
+<a href="https://wa.me/6285707277941">👤 Profil</a>
+</div>
+
+<div class="modal" id="qrisModal">
+<div class="modal-content">
+<h2>QRIS DANZZ STORE</h2>
+<br>
+<img src="qris.jpg">
+<br><br>
+<button class="buy" onclick="hideQR()">TUTUP</button>
+</div>
+</div>
+
+<script>
+function showQR(){
+document.getElementById('qrisModal').style.display='flex';
+}
+
+function hideQR(){
+document.getElementById('qrisModal').style.display='none';
+}
+</script>
+
+</body>
+  </html>
